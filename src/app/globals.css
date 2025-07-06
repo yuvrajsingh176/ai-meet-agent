@@ -49,12 +49,21 @@
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.21 0.006 285.885);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.967 0.001 286.375);
-  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --popover: oklch(98% 0.01 41.116);
+  /* Light warm background */
+  --popover-foreground: oklch(25% 0.03 41.116);
+  /* Muted dark brown for contrast */
+
+  --primary: oklch(64.6% 0.222 41.116);
+  /* Your new main color */
+  --primary-foreground: oklch(98% 0 0);
+  /* Clean white text for buttons etc */
+
+  --secondary: oklch(80% 0.05 41.116);
+  /* Light complementary orange */
+  --secondary-foreground: oklch(30% 0.03 41.116);
+  /* Readable deep text on secondary */
+
   --muted: oklch(0.967 0.001 286.375);
   --muted-foreground: oklch(0.552 0.016 285.938);
   --accent: oklch(0.967 0.001 286.375);
@@ -68,14 +77,26 @@
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-primary: oklch(0.21 0.006 285.885);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.705 0.015 286.067);
+  --sidebar: oklch(64.6% 0.222 41.116);
+  /* Base: rich warm brown-orange */
+
+  --sidebar-foreground: oklch(98% 0.005 20);
+  /* Near-white, good contrast for text */
+  --sidebar-primary: oklch(50% 0.15 41.116);
+  /* Slightly darker variant of base */
+  --sidebar-primary-foreground: oklch(98% 0 0);
+  /* Pure white for primary text/buttons */
+
+  --sidebar-accent: oklch(70% 0.2 60);
+  /* Warm golden tone as accent */
+  --sidebar-accent-foreground: oklch(20% 0.01 41.116);
+  /* Deep brown text on accent */
+
+  --sidebar-border: oklch(80% 0.03 41.116);
+  /* Lighter border matching hue */
+  --sidebar-ring: oklch(72% 0.04 41.116);
+  /* Highlight ring in same color family */
+
 }
 
 .dark {
@@ -116,6 +137,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

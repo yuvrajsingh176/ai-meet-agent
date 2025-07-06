@@ -12,7 +12,7 @@ export default function HomeView() {
     if (!session) {
         return <p>loading...</p>
     }
-    
+
     return (
         <div className="flex flex-col items-center justify-center h-screen">
             <p>Logged in as {session.user.name}</p>

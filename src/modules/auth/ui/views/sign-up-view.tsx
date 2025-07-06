@@ -193,18 +193,18 @@ const SignUpView = () => {
                                 </div>
                                 <div className="text-center text-sm ">
                                     Don&apos;t have an account?
-                                    <Link href='/sign-up' className="underline underline-offset-4">
-                                        {" "}Sign Up
+                                    <Link href='/sign-in' className="underline underline-offset-4">
+                                        {" "}Sign in
                                     </Link>
                                 </div>
                             </div>
                         </form>
                     </Form>
 
-                    <div className="bg-radial  from-orange-300  to-orange-600 relative hidden md:flex flex-col gap-y-4 items-center justify-center">
+                    <div className="bg-radial  from-sidebar-accent to-sidebar relative hidden md:flex flex-col gap-y-4 items-center justify-center">
                         <Image src='/logo.svg' alt="logo" height={92} width={92} className=" h-[92px]  w-[92px]" />
                         <p className="text-2xl font-semibold  text-white ">
-                            Meet.AI
+                            Talk.AI
                         </p>
                     </div>
 
